@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(145deg, #0f0f0f, #1e1e2f);
+      color: #e0e0e0;
+      animation: fadeIn 1.5s ease-in-out;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    nav {
+      background: #000000;
+      color: white;
+      text-align: center;
+      padding: 1em;
+    }
+
+    nav a {
+      color: #aaa;
+      margin: 0 1em;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover, nav a.active {
+      color: #ffffff;
+      border-bottom: 2px solid #ffffff;
+    }
+
+    section {
+      max-width: 900px;
+      margin: 3em auto;
+      padding: 2em;
+      background: #1f1f2e;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
+      animation: slideUp 1s ease-out;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      color: #00bcd4;
+      animation: slideDown 1s ease-out;
+      text-align: center;
+    }
+
+    .project {
+      background: #2a2a40;
+      padding: 1.5em;
+      border-radius: 8px;
+      margin-bottom: 2em;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .project:hover {
+      transform: scale(1.02);
+    }
+
+    .project h2 {
+      color: #00acc1;
+      margin-bottom: 0.5em;
+    }
+
+    .project p {
+      color: #ccc;
+      margin: 0.5em 0;
+    }
+
+    .project a {
+      color: #00bcd4;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .project a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      margin-top: auto;
+      background: #000000;
+      color: #888;
+      text-align: center;
+      padding: 1em;
+      font-size: 0.9rem;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideUp {
+      from { transform: translateY(30px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    @keyframes slideDown {
+      from { transform: translateY(-30px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html">Home</a> |
+    <a href="about.html">About</a> |
+    <a href="projects.html" class="active">Projects</a> |
+    <a href="resume.html">Resume</a> |
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <section>
+    <h1>My Projects</h1>
+
+    <div class="project">
+      <h2>Password Strength Checker</h2>
+      <p>A simple Python project that analyzes password strength using entropy rules and regex checks.</p>
+      <p><a href="https://github.com/yourusername/password-checker" target="_blank">View on GitHub</a></p>
+    </div>
+
+    <div class="project">
+      <h2>Log Analyzer Script</h2>
+      <p>A shell script tool that reads system logs and flags unusual activity patterns. Great for basic forensics!</p>
+      <p><a href="https://github.com/yourusername/log-analyzer" target="_blank">View on GitHub</a></p>
+    </div>
+
+    <div class="project">
+      <h2>Portfolio Website</h2>
+      <p>This personal portfolio you’re viewing now. Designed to showcase my cybersecurity learning and journey.</p>
+      <p><a href="index.html">Live Demo</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Soumya Erra. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
+s

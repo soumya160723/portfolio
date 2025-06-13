@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home Page</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(145deg, #0f0f0f, #1e1e2f);
+      color: #e0e0e0;
+      animation: fadeIn 1.5s ease-in-out;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    nav {
+      background: #000000;
+      color: white;
+      text-align: center;
+      padding: 1em;
+    }
+
+    nav a {
+      color: #aaa;
+      margin: 0 1em;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover, nav a.active {
+      color: #ffffff;
+      border-bottom: 2px solid #ffffff;
+    }
+
+    section {
+      max-width: 800px;
+      margin: 3em auto;
+      padding: 2em;
+      background: #1f1f2e;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
+      animation: slideUp 1s ease-out;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      color: #00bcd4;
+      animation: slideDown 1s ease-out;
+    }
+
+    p {
+      font-size: 1.1rem;
+      margin-bottom: 1em;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    a {
+      color: #00bcd4;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      margin-top: auto;
+      background: #000000;
+      color: #888;
+      text-align: center;
+      padding: 1em;
+      font-size: 0.9rem;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideUp {
+      from { transform: translateY(30px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    @keyframes slideDown {
+      from { transform: translateY(-30px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html" class="active">Home</a> |
+    <a href="about.html">About</a> |
+    <a href="projects.html">Projects</a> |
+    <a href="resume.html">Resume</a> |
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <section id="home">
+    <h1>Soumya Erra</h1>
+    <p>M. Tech Student in Cyber Forensic & Information Security</p>
+    <p>Learning cybersecurity & coding from scratch – aspiring to become a digital defender.</p>
+    <p>Hi! I'm a first-year MTech student specializing in Cyber Forensics and Information Security. I'm currently learning Python, ethical hacking, and building practical skills in cybersecurity. This site showcases my journey, projects, and growth as a future InfoSec professional.</p>
+    <p>Check out my <a href="projects.html">projects</a> and <a href="resume.html">resume</a> to know more!</p>
+  </section>
+
+  <footer>
+    <p>© 2025 Soumya Erra. Built with ❤️ for cybersecurity.</p>
+  </footer>
+
+</body>
+</html>
